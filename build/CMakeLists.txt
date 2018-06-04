@@ -57,6 +57,20 @@ list(APPEND THIRDPART_INC lua-protobuf)
 set (THIRDPART_SRC ${THIRDPART_SRC} ${LPB_SRC})
 #end lua-protobuf
 
+#begin LuaBitOp
+#set (LBO_SRC 
+#    LuaBitOp-1.0.2/pb.c
+#)
+#set_property(
+#    SOURCE ${LBO_SRC}
+#    APPEND
+#    PROPERTY COMPILE_DEFINITIONS
+#    LUA_LIB
+#)
+#list(APPEND THIRDPART_INC lua-protobuf)
+#set (THIRDPART_SRC ${THIRDPART_SRC} ${LBO_SRC})
+#end LuaBitOp
+
 #begin lpeg
 set ( LPEG_SRC
     lpeg/lpcap.c
