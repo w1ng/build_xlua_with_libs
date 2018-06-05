@@ -1,5 +1,8 @@
 xLua常用库集成
 =====
+## PBC
+
+云风的protobuf实现。
 
 ## lua-protobuf
 
